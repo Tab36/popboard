@@ -1,5 +1,5 @@
 const API = "https://popboard.seojin8550.workers.dev";
-ｃｏｎｓｔ ｔｏｋｅｎ
+const token = await fetch(API + "/auth/issue").text();
 
 async function api(path, opｔions = {}) {
   const res = await fetch(API + path, {
