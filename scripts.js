@@ -1,7 +1,7 @@
 const API = "https://popboard.seojin8550.workers.dev";
 async function gettoken() {
   const res = await fetch(API + "/auth/issue");
-  const _token = await res.text();
+    const _token = await res.text();
   localStorage.setItem("token", _token);
 }
 gettoken()
